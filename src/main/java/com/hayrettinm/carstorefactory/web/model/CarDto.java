@@ -8,12 +8,13 @@ import lombok.NoArgsConstructor;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Null;
 import javax.validation.constraints.Positive;
+import java.time.OffsetDateTime;
 import java.util.UUID;
 
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
 public class CarDto {
 
     @Null
@@ -27,4 +28,7 @@ public class CarDto {
 
     @Positive
     private Long chasisNo;
+
+    private OffsetDateTime createdDate;
+    private OffsetDateTime lastUpdatedDate;
 }

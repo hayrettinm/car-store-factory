@@ -1,4 +1,4 @@
-package com.hayrettinm.carstorefactory.web.model.v2;
+package com.hayrettinm.carstorefactory.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -11,9 +11,8 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class CarDtoV2 {
+public class Customer {
+
     private UUID id;
-    private String carName;
-    private CarModel carModel;
-    private Long chasisNo;
+    private String name;
 }
